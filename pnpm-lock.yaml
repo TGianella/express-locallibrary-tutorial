@@ -20,6 +20,9 @@ dependencies:
   http-errors:
     specifier: ~1.6.3
     version: 1.6.3
+  luxon:
+    specifier: ^3.3.0
+    version: 3.3.0
   mongodb:
     specifier: ^5.7.0
     version: 5.7.0
@@ -661,6 +664,11 @@ packages:
   /longest@1.0.1:
     resolution: {integrity: sha512-k+yt5n3l48JU4k8ftnKG6V7u32wyH2NfKzeMto9F/QRE0amxy/LayxwlvjjkZEIzqR+19IrtFO8p5kB9QaYUFg==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /luxon@3.3.0:
+    resolution: {integrity: sha512-An0UCfG/rSiqtAIiBPO0Y9/zAnHUZxAMiCpTd5h2smgsj7GGmcenvrvww2cqNA8/4A5ZrD1gJpHN2mIHZQF+Mg==}
+    engines: {node: '>=12'}
     dev: false
 
   /media-typer@0.3.0:
