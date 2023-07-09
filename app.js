@@ -13,7 +13,8 @@ var app = express();
 // Set up mongoose connection
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
-const mongoDB = "mongodb+srv://theogianella:CuPfyydHDLmBftfi@cluster0.bdshhib.mongodb.net/local_library?retryWrites=true&w=majority";
+const dev_db_url = "mongodb+srv://theogianella:CuPfyydHDLmBftfi@cluster0.bdshhib.mongodb.net/local_library?retryWrites=true&w=majority";
+const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 main().catch((err) => console.log(err));
 async function main() {
